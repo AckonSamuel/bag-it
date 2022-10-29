@@ -5,7 +5,7 @@ const LinksPage = () => {
 
     return ( 
         <ul className="link-list">{
- data.map((item) => <Links name={item} /> )}
+ data.map((item) => <li><Links name={item} /></li> )}
  </ul>
     )
 }
