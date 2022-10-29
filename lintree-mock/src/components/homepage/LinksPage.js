@@ -1,3 +1,5 @@
+import './linkspage.css';
+
 const LinksPage = () =>
         <div className='btn-links'>
                 <a href="https://www.twitter.com/dude_ackon"><button>Twitter Link</button></a>
