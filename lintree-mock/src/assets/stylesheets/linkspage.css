@@ -8,23 +8,19 @@
         align-items: center;
         flex: none;
         text-align: center;
-
     }
 
     .btn-links {
-
         flex-direction: column;
         margin: auto;
         padding: 0px;
         gap: 24px;
         align-self: stretch;
         order: 1;
-
         flex-grow: 0;
     }
 
     .btn-link {
-
         flex-direction: row;
         padding: 24px 32px;
         gap: 8px;
@@ -32,23 +28,18 @@
         width: 90%;
         height: 75px;
         padding-top: 30px;
-
         background: #EAECF0;
         color: #101828;
-
         border: 1px solid #EAECF0;
         border-radius: 8px;
-
         order: 0;
         flex-grow: 1;
         font-size: small;
         font-family: 'Inter', sans-serif;
-
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-
     }
 
     small {
@@ -56,6 +47,8 @@
     }
 
 }
+
+@media only screen and (min-width: 375px) {
 
 
 .btn-link,
@@ -102,4 +95,6 @@ flex-grow: 0;
 small {
     font-size: small;
     color: #505154;
+}
+
 }
