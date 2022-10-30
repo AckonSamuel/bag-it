@@ -1,14 +1,18 @@
 import Social from './components/social/Social';
-import LinksPage from './components/homepage/LinksPage';
-import profileImg from './assets/images/profile_img.png';
+import LinksPage from './components/linkspage/LinksPage';
+import Footer from './components/footer/Footer';
+import './App.css';
 
 const App = () => 
     <div className="App">
-      <header className="App-header">
-        <img src={profileImg} id="profile_img" alt="logo" />
-      </header>
+      <div className='profile-container'>
+      <div id="profile_img">
+      </div>
+      <h2 id="annette">Ackon Samuel</h2>
+      </div>
       <LinksPage />
       <Social />
+      <Footer />
 
     </div>;
 
