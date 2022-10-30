@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import Social from './components/social/Social';
+import LinksPage from './components/linkspage/LinksPage';
+import Footer from './components/footer/Footer';
+import share from './assets/images/share_button.png';
+import d_share from './assets/images/desk_share.png';
 import './App.css';
 
-function App() {
-  return (
+const App = () => 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <img src={d_share} alt="share" className="d-share" /> <img src={share} alt="share" className="share" />
+      <div className='profile-container'>
+      <div id="profile_img">
+      </div>
+      <h2 id="annette">Ackon Samuel</h2>
+      </div>
+      <LinksPage />
+      <Social />
+      <Footer />
+
+    </div>;
 
 export default App;
