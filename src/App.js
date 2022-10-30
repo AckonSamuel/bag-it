@@ -12,6 +12,9 @@ const App = () =>
       <div id="profile_img">
       </div>
       <h2 id="annette">Ackon Samuel</h2>
+       <small id='slack'><em>Slack: @ackon_samuel</em></small> 
+       <br />
+       <small id='twitter'><em>Twitter: @dude_ackon</em></small>
       </div>
       <LinksPage />
       <Social />
