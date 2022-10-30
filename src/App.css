@@ -21,7 +21,8 @@
  #profile_img {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-end;
+   align-items: center;
    padding: 0px;
    border-radius: 50%;
    width: 88px;
@@ -56,9 +57,51 @@
  }
 
  .d-share {
-  margin-left: 76%;
+    margin-left: 76%;
     margin-bottom: -70px;
     margin-top: 44px;
+ }
+
+ .s-share {
+display: none;
+}
+
+.d-share:hover {
+  cursor: pointer;
+}
+
+.d-share:focus {
+  background: #FFFFFF;
+border: 1px dashed #D0D5DD;
+box-shadow: 0px 0px 0px 4px #F2F4F7;
+border-radius: 20px;
+}
+
+ .d-share:hover + .s-share {
+  display: block;
+  margin-left: 68%;
+  margin-bottom: -90px;
+  margin-top: 30px;
+ }
+
+ .camera {
+  display: none;
+ }
+
+ .cam-in {
+  object-fit: contain;
+        width: 100%;
+        height: 100%;
+ }
+
+ #profile_img:hover{
+ opacity: 0.6;
+}
+
+ #profile_img:hover .camera {
+  display: block;
+  width: 24px;
+  height: 24px;
  }
 
 }
@@ -67,12 +110,12 @@
 
   .profile-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: flex-end;
+   flex-direction: column;
+   align-items: center;
+   justify-items: flex-end;
     padding: 0px;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     isolation: isolate;
     width: 100%;
     height: 140px;
@@ -82,10 +125,16 @@
     flex-grow: 0;
   }
 
+  .s-share {
+    display: none;
+    }
+    
+
   #profile_img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+   align-items: center;
     padding: 0px;
     border-radius: 50%;
     width: 88px;
@@ -124,4 +173,24 @@
     order: 0;
     flex-grow: 1;
   }
+
+  .camera {
+    display: none;
+   }
+  
+   .cam-in {
+    object-fit: contain;
+          width: 100%;
+          height: 100%;
+   }
+  
+   #profile_img:hover{
+   opacity: 0.6;
+  }
+  
+   #profile_img:hover .camera {
+    display: block;
+    width: 24px;
+    height: 24px;
+   }
  }
