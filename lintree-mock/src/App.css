@@ -1,3 +1,6 @@
+@media only screen and (min-width: 375px) {
+ 
+ 
  .profile-container {
    display: flex;
    flex-direction: column;
@@ -47,4 +50,78 @@
    order: 0;
    flex-grow: 1;
  }
+
+ .share {
+  display: none;
+ }
+
+ .d-share {
+  margin-left: 76%;
+    margin-bottom: -70px;
+    margin-top: 44px;
+ }
+
+}
  
+ @media only screen and (max-width: 375px) {
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    isolation: isolate;
+    width: 100%;
+    height: 140px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  #profile_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    background-image: url('./assets/images/photo_sam.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 275px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+  }
+
+  .share {
+    margin-left: 82%;
+    margin-bottom: -70px;
+    margin-top: 44px;
+   }
+  
+   .d-share {
+    display: none;
+   }
+
+   #annette {
+    height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #101828;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+ }
