@@ -2,12 +2,9 @@ import './../../assets/stylesheets/linkspage.css';
 
 const LinksPage = () =>
         <div className='btn-links'>
-                <a href="https://www.twitter.com/dude_ackon" className='btn-link'>
-                        Twitter Link
-                        
-                        </a>
-                <a href="https://training.zuri.team/" title='Join the Zuri Team' id='btn__zuri' className='btn-link'><p>Zuri Team<br />
-                <small></small></p>
+                <a href="https://www.twitter.com/dude_ackon" className='btn-link' id='twitter'>
+                        Twitter Link </a>
+                <a href="https://training.zuri.team/" title='Join the Zuri Team' id='btn__zuri' className='btn-link'><p>Zuri Team</p>
                 </a>
                 <a href="http://books.zuri.team" id='books' title='This is where you find books about design and coding.' className='btn-link'>
                         <p>Zuri Books</p>

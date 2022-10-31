@@ -18,7 +18,7 @@ const App = () =>
     </div>
     <div className='profile-container'>
       <div id="profile_img">
-        <div className='camera'><img src={camera} alt="camera" className='cam-in' /></div>
+        <div className='camera'><img src={camera} alt="camera" className='cam-in' id="profile__img"/></div>
       </div>
       <h2 id="annette">Ackon Samuel</h2>
       <p id='slack'>ackon_samuel</p>
