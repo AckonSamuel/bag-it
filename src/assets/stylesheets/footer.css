@@ -1,53 +1,18 @@
-@media only screen and (max-width: 375px) {
-
-
+@media all and (max-width: 375px) {
 
     footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 32px 0px;
-        gap: 64px;
-        width: 100%;
-        height: 300px;
-        background: #FFFFFF;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        padding: 0px 16px;
-        gap: 32px;
-        width: 100%;
-        height: 132px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .content {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 32px 0px 0px;
-        gap: 16px;
-        width: 343px;
-        height: 132px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1em;
         border-top: 1px solid #EAECF0;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0
+        margin: 64px 32px;
+        padding: 32px 0;
+      
     }
-
-
 
     .hng {
+        grid-row: 2/3;
         width: 213px;
         height: 20px;
         font-family: 'Inter', sans-serif;
@@ -62,6 +27,7 @@
     }
 
     .img-container {
+        grid-row: 1/2;
         width: 130px;
         height: 18px;
     }
@@ -72,44 +38,26 @@
         height: 100%;
     }
 
-    .i4g {
-        margin-top: -75px;
-        margin-left: -245px;
-        width: 139px;
-        height: 30px;
-        background-image: url('./../images/i4g_logo.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 60% 60%;
+    .downlow {
+        grid-row: 3/4;
+        width: 99.1px;
+        height: 24px;
     }
 
 }
 
-@media only screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
     footer {
         display: flex;
         width: 90%;
+        align-items: flex-start;
+        justify-content: space-between;
         margin: 64px auto 52px auto;
         padding-top: 32px;
-        border-top: 1px solid #EAECF0; 
-    }
-
-    .container {
-        width: 100%;
-
-    }
-
-    .content {
-        display: flex;
-        flex: 1;
-        box-sizing: border-box;
-        width: 70%;
-        justify-content: space-between;
+        border-top: 1px solid #EAECF0;
     }
 
     .hng {
-        margin-top: 10px;
-        padding-left: 10%;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -120,25 +68,19 @@
     }
 
     .img-container {
-        width: 50%;
+        width: auto;
         height: auto;
     }
 
     #logo {
-        object-fit: cover;
-        width: 187.59px;
+        object-fit: contain;
+        width: 100%;
         height: 32px;
     }
 
-    .i4g {
-        margin-left: auto;
-        margin-top: auto;
+    .downlow {
         width: 132.13px;
         height: 32px;
-        background-image: url('./../images/i4g_logo.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right bottom;
     }
 
 }
