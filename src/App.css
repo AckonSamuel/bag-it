@@ -30,7 +30,7 @@
    flex-grow: 0;
  }
 
- #profile_img {
+ #profile__img {
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -115,11 +115,11 @@ border-radius: 20px;
         height: 100%;
  }
 
- #profile_img:hover{
+ #profile__img:hover{
   filter: brightness(65%);
 }
 
- #profile_img:hover .camera {
+ #profile__img:hover .camera {
   display: block;
   width: 24px;
   height: 24px;
@@ -151,7 +151,7 @@ border-radius: 20px;
     }
     
 
-  #profile_img {
+  #profile__img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -201,11 +201,11 @@ border-radius: 20px;
           height: 100%;
    }
   
-   #profile_img:hover {
+   #profile__img:hover {
    filter: brightness(65%);
    }
   
-   #profile_img:hover .camera {
+   #profile__img:hover .camera {
     display: block;
     width: 24px;
     height: 24px;
