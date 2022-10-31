@@ -7,24 +7,25 @@ import camera from './assets/images/camera.png';
 import s_share from './assets/images/Tooltip.png';
 import './App.css';
 
-const App = () => 
-    <div className="App">
-     <img src={d_share} alt="share" className="d-share" />
-     <img src={s_share} alt="share" className="s-share" /> 
-      <img src={share} alt="share" className="share" />
-      <div className='profile-container'>
+const App = () =>
+  <div className="App">
+    <div className='container-ic'>      
+      <div className='sh-container'><img src={share} alt="share" className="share" /></div>
+      <div className='ds-container'>
+      <div className='d-container'><img src={d_share} alt="share" className="d-share" /></div>
+      <div className='s-container'><img src={s_share} alt="share" className="s-share" /></div>
+      </div>
+    </div>
+    <div className='profile-container'>
       <div id="profile_img">
-        <div className='camera'><img src={camera} alt="camera" className='cam-in'/></div>
+        <div className='camera'><img src={camera} alt="camera" className='cam-in' /></div>
       </div>
       <h2 id="annette">Ackon Samuel</h2>
-       <small id='slack'><em>Slack: @ackon_samuel</em></small> 
-       <br />
-       <small id='twitter'><em>Twitter: @dude_ackon</em></small>
-      </div>
-      <LinksPage />
-      <Social />
-      <Footer />
-
-    </div>;
+      <p id='slack'>ackon_samuel</p>
+    </div>
+    <LinksPage />
+    <Social />
+    <Footer />
+  </div>
 
 export default App;
